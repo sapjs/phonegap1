@@ -22,45 +22,37 @@
 </head>
 
 <body>
+    
+	<h1>Neuer Ort<h1>
+	Name: <input type="text" id="placename"><br>
+	Lat: <input type="text" id="placelat"><br>
+	Lng: <input type="text" id="placelng"><br>
+	<button id="save">SAVE</button>
+	<hr>
+	<h1>Alle gespeicherten Orte</h1>
+	<div id="places"></div>
 
-  <div class="page" id="page1">
-    <div>Willkommen bei der APP<br><b>WIFI Orte</b></div>
-  </div>
-  <div class="page" id="page2">
-    <div>
-      <br><b>Neuer Ort</b><br><br>
+    <div id="map"></div>
+    
 
-      Name:<br><input type="text" id="placename"><br><br>
-    	Lat:<br><input type="text" id="placelat"><br><br>
-    	Lng:<br><input type="text" id="placelng"><br><br><br>
-    	<button id="save">SAVE</button>
-    </div>
-  </div>
-  <div class="page" id="page3">
-    <div>
-      <br><b>alle Orte</b><br><br>
-      <div id="places"></div>
-    </div>
-  </div>
-  <div class="page" id="page4">
-    <div>
-      <br><b>Karte</b><br>
-      <div id="goolemap" style="width:200px; height:200px;"></div>
-    </div>
-  </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"
+    async defer></script>
 
-  <nav id="bottom">
-    <ul>
-      <li><a href="#page2">IN</a></li>
-      <li><a href="#page3">OUT</a></li>
-      <li><a href="#page4">MAP</a></li>
-    </ul>
-  </nav>
 
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
 </body>
 
 </html>

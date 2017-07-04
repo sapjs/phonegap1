@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="at.wifiwien.places" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>###</name>
+    <name>Wifi Orte Verwaltung</name>
     <description>
-       ###
+       Applikation zum Verwalten von Orten im Wifi 
     </description>
-    <author email="###" href="###">###</author>
+    <author email="sapjs@gmx.at" href="sapjs.at">sapjs</author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />

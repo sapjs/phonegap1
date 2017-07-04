@@ -6,11 +6,77 @@ body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
-    background-color:#FFFFFF;
+    background-color:pink;
     font-family:sans-serif;
     font-size:16px;
     height:100%;
     margin:0px;
     padding:0px;
     width:100%;
+}
+
+html, body, .page { height:100%; }
+.page {
+  display:flex; align-items:center; justify-content:center;
+}
+
+.page > div {
+  text-align:center;
+}
+
+.page { display:none; }
+#page1 { display:flex; }
+
+
+#bottom {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+#bottom ul {
+  display:flex;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+#bottom li {
+  border:1px solid #000;
+  align-items:stretch;
+  flex-grow:1;
+}
+
+#bottom a {
+  transition:all 1s;
+  color:#000;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+  height:2.5em;
+  line-height:2.5em;
+}
+
+#bottom a.aktiv {
+  color:#fff;
+  background:#444;
+}
+
+#page2 input {
+  border:1px solid #000;
+  border-radius:5px;
+  font-size:1.5em;
+  width:90%;
+}
+
+#page2 button {
+  border:1px solid #000;
+  border-radius:5px;
+  font-size:1.5em;
+  background:#1bb723;
+  color:#fff;
+  text-align:center;
+  width:90%;
+  padding:10px 0;
 }
